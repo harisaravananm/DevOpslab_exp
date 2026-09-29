@@ -1,0 +1,31 @@
+Sample File:
+pipeline {
+    agent any
+
+    tools {
+        maven 'Maven3'
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git '<REPOSITORY-URL>'
+            }
+        }
+
+        stage('Maven Build') {
+            steps {
+                bat 'mvn clean package'
+                // Use: sh 'mvn clean package' on Linux agents
+            }
+        }
+
+        stage('Docker Build') {
+            steps {
+                bat 'docker build -t devops-hello:latest .'
+                // Use: sh 'docker build -t devops-hello:latest .' on Linux agents
+            }
+        }
+    }
+}
+
