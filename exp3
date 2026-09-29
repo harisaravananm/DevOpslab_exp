@@ -1,0 +1,26 @@
+Commands:
+docker --version
+docker info
+
+docker pull hello-world
+docker images
+docker run hello-world
+
+docker pull ubuntu
+docker run -it ubuntu
+docker ps
+docker ps -a
+
+docker stop <CONTAINER_ID>
+docker rm <CONTAINER_ID>
+docker rmi <IMAGE_ID>
+
+
+
+
+
+
+
+
+
+
