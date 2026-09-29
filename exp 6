@@ -1,0 +1,15 @@
+Commands:
+mkdir hello-world-devops
+cd hello-world-devops
+
+
+echo "# Hello World DevOps Project" > README.md
+echo "public class HelloWorld { public static void main(String[] args) { System.out.println("Hello World"); } }" > HelloWorld.java
+
+git init
+git add .
+git commit -m "Add Hello World application"
+git branch -M main
+git remote add origin https://github.com/<USERNAME>/hello-world-devops.git
+git push -u origin main
+
