@@ -2,10 +2,7 @@
 
 <div align="center">
 
-![DevOps Lab Banner](https://img.shields.io/badge/IFET%20COLLEGE%20OF%20ENGINEERING-Autonomous%20Institution-003366?style=for-the-badge)
-![Department](https://img.shields.io/badge/DEPARTMENT-AI%20%26%20ML-FF6F00?style=for-the-badge)
-![Academic Year](https://img.shields.io/badge/ACADEMIC%20YEAR-2026--2027-007A33?style=for-the-badge)
-![Regulation](https://img.shields.io/badge/REGULATION-IFETCE%20R--2023-7B1FA2?style=for-the-badge)
+
 
 <br/>
 
