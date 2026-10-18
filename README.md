@@ -1,4 +1,4 @@
-# 🚀 DevOps Laboratory Experiments (IFETCE R-2023)
+# 🚀 DevOps Laboratory Experiments 
 
 <div align="center">
 
@@ -186,5 +186,4 @@ mvn clean package
 
 ---
 
-## 📄 License & Academic Integrity
-This repository is created for educational and laboratory course demonstration purposes for the **Department of Artificial Intelligence & Machine Learning**, **IFET College of Engineering**. All code and materials follow the academic regulations of IFETCE R-2023.
+
