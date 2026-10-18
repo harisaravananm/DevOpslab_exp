@@ -1,14 +1,3 @@
-Commands:
-ansible --version
-
-# hosts.ini
-localhost ansible_connection=local
-
-ansible-inventory -i hosts.ini --list
-ansible-playbook -i hosts.ini setup.yml
-
-
-Sample File:
 ---
 - name: Simple Ansible Automation
   hosts: localhost
@@ -28,12 +17,10 @@ Sample File:
 
     - name: Create message file
       ansible.builtin.copy:
-        content: "{{ message }}
-"
+        content: "{{ message }}\n"
         dest: "{{ project_dir }}/message.txt"
         mode: "0644"
 
     - name: Display completion message
       ansible.builtin.debug:
-        msg: "{{ message }}
-
+        msg: "{{ message }}"

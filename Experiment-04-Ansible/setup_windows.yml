@@ -1,0 +1,24 @@
+---
+- name: Simple Ansible Automation for Windows
+  hosts: localhost
+  connection: local
+  gather_facts: false
+
+  vars:
+    project_dir: "C:\\temp\\devops_lab"
+    message: "Ansible automation completed"
+
+  tasks:
+    - name: Create project directory
+      ansible.builtin.file:
+        path: "{{ project_dir }}"
+        state: directory
+
+    - name: Create message file
+      ansible.builtin.copy:
+        content: "{{ message }}\n"
+        dest: "{{ project_dir }}\\message.txt"
+
+    - name: Display completion message
+      ansible.builtin.debug:
+        msg: "{{ message }}"

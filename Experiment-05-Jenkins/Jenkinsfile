@@ -1,4 +1,3 @@
-Sample File:
 pipeline {
     agent any
 
@@ -9,23 +8,26 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git '<REPOSITORY-URL>'
+                git 'https://github.com/harisaravananm/DevOpslab_exp.git'
             }
         }
 
         stage('Maven Build') {
             steps {
+                // Windows agent:
                 bat 'mvn clean package'
-                // Use: sh 'mvn clean package' on Linux agents
+                // Linux agent:
+                // sh 'mvn clean package'
             }
         }
 
         stage('Docker Build') {
             steps {
+                // Windows agent:
                 bat 'docker build -t devops-hello:latest .'
-                // Use: sh 'docker build -t devops-hello:latest .' on Linux agents
+                // Linux agent:
+                // sh 'docker build -t devops-hello:latest .'
             }
         }
     }
 }
-
